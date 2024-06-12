@@ -2,6 +2,7 @@
     import AppLayout from "@/layouts/app.svelte";
     import Breadcrumb from "@/components/core/Breadcrumb.svelte";
     import FormPost from "@/components/forms/FormPost.svelte";
+    import Icon from "@/components/core/Icon.svelte";
 
     const breadcrumbs = [
         "Home",
@@ -17,7 +18,15 @@
         <div class="lg:basis-5/6 md:basis-4/6 sm:basis-3/4 mt-8 lg:px-12 md:px-2 sm:px-2 flex flex-col">
             <Breadcrumb items="{breadcrumbs}"/>
             <div class="mb-4"></div>
-            <div class="bg-ma-white py-3 px-5 rounded text-navy-seal border-dodger-blue border-2"> <span class="font-bold">New updates</span>: Restart to get the latest updates.</div>
+            <div class="bg-ma-white py-3 px-5 rounded text-navy-seal border-dodger-blue border-2 flex">
+                <Icon size="sm" name="InfoCircleOutline" className="mr-2"/>
+                <span
+                        class="font-bold">New updates</span>: Restart to get the latest updates.
+                <div class="ml-auto flex">
+                    Learn More
+                    <Icon size="sm" name="CloseOutline" className="ml-2"/>
+                </div>
+            </div>
             <div class="mb-4"></div>
             <div class="mt-4 text-squant text-sm font-mono">NG Apps Workflow</div>
             <div class="text-nero text-xl font-bold mt-4">Visual workflow automation.Now with code.</div>

@@ -1,22 +1,16 @@
 <script lang="ts">
     import Input from "@/components/core/Input.svelte";
-
-    type Link = {
-        href: string,
-        title: string
-    }
-    export let links: Link[] = [];
 </script>
 <div class="navbar bg-white flex p-8 relative items-center">
-    <div class="lg:basis-2/12">
+    <div class="lg:basis-2/12 md:basis-2/12 sm:basis-2/12">
         <img src="/logo.svg" />
     </div>
-    <Input className="lg:basis-7/12 md:basis-7/12 sm:basis- lg:ml-7 md:ml-14">
+    <Input className="lg:basis-7/12 md:basis-7/12 sm:basis-7/12 lg:ml-14 md:ml-14">
         <div slot="prepend-inner-icon">
             <img src="/icons/search.svg" width="30px" />
         </div>
     </Input>
-    <div class="basis-1/6 md:hidden flex justify-end gap-4">
+    <div class="lg:basis-1/6 justify-end sm:hidden md:flex lg:flex lg:gap-4 md:gap-2 sm:gap-2">
         <img src="/icons/list.svg" width="30px" />
         <img src="/icons/notification.svg" width="30px" />
         <img src="/icons/setting.svg" width="30px" />

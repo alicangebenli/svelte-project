@@ -11,7 +11,6 @@
         value: "test"
     }]
     export let value: string;
-    $: currentValue = value;
     function handleChange({target: t}) {
         value = t.value;
     }
