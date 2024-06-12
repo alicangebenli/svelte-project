@@ -27,7 +27,7 @@
         {
             title: "Micro Functions",
             active: false,
-            icon: "ShareNodesOutline"
+            icon: "CodeMergeOutline"
         },
         {
             title: "Gateway",
