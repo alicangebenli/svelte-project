@@ -11,16 +11,13 @@
     const post = usePost();
     let users: User[];
     let hasError: boolean = false;
-    let forms = resetForms();
-
-    function resetForms() {
-        return {
-            titles: [],
-            userIds: [],
-            bodies: [],
-            visibleTextAreas: []
-        }
-    }
+    let isSent: boolean = false;
+    let forms = {
+        titles: [],
+        userIds: [],
+        bodies: [],
+        visibleTextAreas: []
+    };
 
     onMount(async () => {
         users = await post.getUsers();
@@ -31,15 +28,22 @@
         if (!isFullFilled) {
             hasError = true;
         } else {
+            isSent = true
             forms.titles = [];
             forms.userIds = [];
             forms.bodies = [];
+            forms.visibleTextAreas = []
         }
     }
 </script>
 {#if hasError}
-    <div class="my-4 py-3 px-5 bg-ma-white border-dodger-blue border-2 rounded">
+    <div class="my-4 py-3 px-5 bg-whero-red rounded">
         <span class="font-bold">Error:</span> There was an error
+        for some forms. Check and resubmit the ones with errors.
+    </div>
+{:else if !hasError && isSent}
+    <div class="my-4 py-3 px-5 bg-liberty-green rounded text-white">
+        <span class="font-bold">Success:</span> There was an error
         for some forms. Check and resubmit the ones with errors.
     </div>
 {/if}

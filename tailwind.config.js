@@ -17,7 +17,9 @@ export default {
       "white-edgar": "#EDEDED",
       "hailey-blue": "#3170F9",
       "dodger-blue": "#3C82F6",
-      "ma-white": "#f5f9ff"
+      "ma-white": "#f5f9ff",
+      "liberty-green": "#16a34a",
+      "whero-red": "#dc2626"
     }
   }
 }
