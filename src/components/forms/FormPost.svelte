@@ -37,13 +37,13 @@
     }
 </script>
 {#if hasError}
-    <div class="my-4 py-3 px-5 bg-red-500 rounded">
-        <span class="font-bold">Error:</span> There was an error
+    <div class="my-4 py-3 px-5 bg-red-700 rounded text-white">
+        <span class="font-bold text-white">Error:</span> There was an error
         for some forms. Check and resubmit the ones with errors.
     </div>
 {:else if !hasError && isSent}
-    <div class="my-4 py-3 px-5 bg-green-500 rounded text-white">
-        <span class="font-bold">Success:</span> There was an error
+    <div class="my-4 py-3 px-5 bg-green-700 rounded text-white">
+        <span class="font-bold text-white">Success:</span> There was an error
         for some forms. Check and resubmit the ones with errors.
     </div>
 {/if}

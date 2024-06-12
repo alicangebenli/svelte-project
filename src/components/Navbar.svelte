@@ -5,7 +5,9 @@
     <div class="lg:basis-2/12 md:basis-2/12 sm:basis-2/12">
         <img src="/logo.svg" />
     </div>
-    <Input className="lg:basis-7/12 md:basis-7/12 sm:basis-7/12 lg:ml-14 md:ml-14">
+    <Input
+            placeholder="Kaynakları, hizmetleri ve belgeleri arayın"
+            className="lg:basis-7/12 md:basis-7/12 sm:basis-7/12 lg:ml-14 md:ml-14">
         <div slot="prepend-inner-icon">
             <img src="/icons/search.svg" width="30px" />
         </div>

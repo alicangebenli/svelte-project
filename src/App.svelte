@@ -23,7 +23,7 @@
                 <span
                         class="font-bold">New updates</span>: Restart to get the latest updates.
                 <div class="ml-auto flex">
-                    Learn More
+                    Learn more
                     <Icon size="sm" name="CloseOutline" className="ml-2"/>
                 </div>
             </div>
