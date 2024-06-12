@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar.svelte";
 </script>
 <Navbar />
 <div class="min-h-full h-full flex">
-    <Sidebar className="basis-1/6"/>
+    <Sidebar className="lg:basis-1/6 md:basis-2/6 sm:basis-2/5"/>
     <slot />
 </div>
 

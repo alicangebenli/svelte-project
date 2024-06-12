@@ -13,13 +13,16 @@
         value = t.value;
     }
 </script>
-<div class="{className}">
+<div class="{className} relative">
     {#if label}
         <span class="text-nero text-sm font-bold">{label}</span>
     {/if}
+    <div class="absolute" style="left: 10px; top: 12%">
+        <slot name="prepend-inner-icon" />
+    </div>
     <input
             value="{currentValue}"
-            class="{classes[type]}"
+            class="{classes[type]} {$$slots['prepend-inner-icon'] ? 'pl-10': '' }"
             placeholder="{placeholder}"
             type="{type}"
             on:input={handleInput}

@@ -47,7 +47,7 @@
         for some forms. Check and resubmit the ones with errors.
     </div>
 {/if}
-<div class="grid grid-cols-3 gap-2">
+<div class="grid grid-cols-3 gap-4">
     {#each [0, 1, 2] as i}
         <Input label="Title" placeholder="Enter a title" bind:value={forms.titles[i]}/>
     {/each}
