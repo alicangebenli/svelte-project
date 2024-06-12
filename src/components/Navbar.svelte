@@ -22,7 +22,7 @@
         <img src="/icons/setting.svg" width="30px" />
         <img src="/icons/info.svg" width="30px" />
     </div>
-    <div class="navbar__user lg:basis-2/12 md:basis-1/12 sm:basis-1/12 ml-auto flex">
+    <div class="navbar__user lg:basis-2/12 md:basis-1/12 sm:basis-1/12 ml-auto flex justify-end">
         <div class="mr-4 text-sm flex flex-col items-end">
             <div class="text-nero font-bold">MURAT TUFAN</div>
             <div class="text-dodger-blue">murat.tufan@glomil.com</div>

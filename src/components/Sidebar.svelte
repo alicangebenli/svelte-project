@@ -24,7 +24,7 @@
         </li>
         <li class="sidebar__inline text-nero text-sm px-4 py-2 flex items-center w-full">
             <img src="/icons/micro-functions.svg" width="32px" />
-            <div class="w-full rounded cursor-pointer flex items-center pl-2">Micro Functions</div>
+            <div class="w-full rounded cursor-pointer flex items-center pl-2 sidebar__inline--active">Micro Functions</div>
         </li>
         <li class="sidebar__inline text-nero text-sm px-4 py-2 flex items-center w-full">
             <img src="/icons/gateway.svg" width="32px" />

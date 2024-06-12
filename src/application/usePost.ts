@@ -1,8 +1,6 @@
 import type {PostServiceInterface, UserServiceInterface} from "../services/ports";
 import {PostService} from "../services/Post";
 import {UserService} from "../services/User";
-import http from "../shared/helper/http";
-import axios from "axios";
 
 export function usePost() {
     const postService: PostServiceInterface = PostService;

@@ -37,12 +37,12 @@
     }
 </script>
 {#if hasError}
-    <div class="my-4 py-3 px-5 bg-whero-red rounded">
+    <div class="my-4 py-3 px-5 bg-red-500 rounded">
         <span class="font-bold">Error:</span> There was an error
         for some forms. Check and resubmit the ones with errors.
     </div>
 {:else if !hasError && isSent}
-    <div class="my-4 py-3 px-5 bg-liberty-green rounded text-white">
+    <div class="my-4 py-3 px-5 bg-green-500 rounded text-white">
         <span class="font-bold">Success:</span> There was an error
         for some forms. Check and resubmit the ones with errors.
     </div>
@@ -63,7 +63,7 @@
         </div>
     {/each}
 </div>
-<div class="ml-auto flex">
+<div class="ml-auto text-end">
     <Button variant="default" label="Accept" on:click={onSubmit}/>
     <Button variant="text" label="Cancel"/>
 </div>
