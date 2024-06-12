@@ -9,8 +9,6 @@ npm install
 npm run dev
 ```
 
-Additionally, I did not develop component tests for the project. Due to the workload on my plate this week, I wanted to make sure it wasn't delayed at the company.
-
 
 
 
